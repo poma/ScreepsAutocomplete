@@ -12,13 +12,22 @@ Mineral = function() { };
 Mineral.prototype =
 {
     /**
+     * The density that this mineral deposit will be refilled to once ticksToRegeneration reaches 0. This is one of the DENSITY_* constants.
+     *
+     * @see {@link https://docs.screeps.com/api/#Mineral.density}
+     *
+     * @type {number}
+     */
+    density: 0,
+
+    /**
      * The remaining amount of resources.
      *
      * @see {@link http://support.screeps.com/hc/en-us/articles/207218579-Mineral#mineralAmount}
      *
      * @type {number}
      */
-    mineralAmount: 0,
+    densitynumber: 0,
 
     /**
      * The resource type, one of the RESOURCE_* constants.
