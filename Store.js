@@ -9,7 +9,7 @@
  * You can get specific resources from the store by addressing them as object properties:
  * console.log(creep.store[RESOURCE_ENERGY]);
  *
- * @class
+ * @class {Object<string, number>}
  *
  * @see {@link https://docs.screeps.com/api/#Store}
  */

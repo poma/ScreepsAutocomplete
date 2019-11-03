@@ -38,10 +38,10 @@ RoomVisual.prototype =
          *
          * @type {function}
          *
-         * @param {number} x1 The start X coordinate.
-         * @param {number} y1 The start Y coordinate.
-         * @param {number} x2 The finish X coordinate.
-         * @param {number} y2 The finish Y coordinate.
+         * @param {number|RoomPosition} x1 The start X coordinate.
+         * @param {number|RoomPosition} y1 The start Y coordinate.
+         * @param {number} [x2] The finish X coordinate.
+         * @param {number} [y2] The finish Y coordinate.
          * @param {Object} [style] Style object
          *
          * @return {RoomVisual}
@@ -55,7 +55,7 @@ RoomVisual.prototype =
           *
           * @type {function}
           *
-          * @param {number} x The X coordinate of the center.
+          * @param {number|RoomPosition} x The X coordinate of the center.
           * @param {number} [y] The Y coordinate of the center.
           * @param {Object} [style] Style object
           *
@@ -72,8 +72,8 @@ RoomVisual.prototype =
          *
          * @type {function}
          *
-         * @param {number} x The X coordinate of the top-left corner.
-         * @param {number} y The Y coordinate of the top-left corner.
+         * @param {number|RoomPosition} x The X coordinate of the top-left corner.
+         * @param {number} [y] The Y coordinate of the top-left corner.
          * @param {number} width The width of the rectangle.
          * @param {number} height The height of the rectangle.
          * @param {object} style Style object
@@ -106,8 +106,8 @@ RoomVisual.prototype =
          * @type {function}
          *
          * @param {string} text The text message.
-         * @param {number} x The X coordinate of the label baseline point.
-         * @param {number} y The Y coordinate of the label baseline point.
+         * @param {number|RoomPosition} x The X coordinate of the label baseline point.
+         * @param {number} [y] The Y coordinate of the label baseline point.
          * @param {object} [style] Style object
          *
          * @alias text(text, pos, [style])
